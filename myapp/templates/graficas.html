@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráficas</title>
+</head>
+<body>
+    <h1>Graficas yay!</h1>
+    {% for grafica in graficas %}
+        <div style="margin-bottom: 30px;">
+            <img src="data:image/png;base64,{{ grafica }}" alt="Gráfica" style="width: 600px;">
+        </div>
+    {% endfor %}
+</body>
+</html>
